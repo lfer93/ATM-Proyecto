@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DEV.F ATM</title>
+</head>
+<body>
+<header class="nav-bar">
+    <img class="logo" src="https://campus.devf.la/static/media/logo-devf-white.0e9942b3.svg" alt="DevF-Logo">
+    <h1 class="title">ATM</h1>
+</header>
+    <article class="container">
+        <h1>Bienvenido a tu Banco</h1>
+        <section id="login">
+            <h2>Login</h2>
+            <input class="username_input" type="text" id="username" placeholder="Usuario">
+            <input class="password_input" type="password" id="password" placeholder="Contraseña">
+            <button class="login_btn" onclick="login()">Login</button>
+        </section>
+        <section id="operations" style="display: none;">
+            <h2>Bienvenido, <span id="user"></span>!</h2>
+            <p>Tu saldo es: $<span id="balance"></span></p>
+            <input class="monto_input" type="number" id="amount" placeholder="Ingresa el monto">
+            <button class="retiro_btn" onclick="withdraw()">Retiro</button>
+            <button class="deposito_btn" onclick="deposit()">Deposito</button>
+            <button class="logout_btn" onclick="logout()">Logout</button>
+        </section>
+    </article>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
